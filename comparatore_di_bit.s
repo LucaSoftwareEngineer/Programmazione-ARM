@@ -20,13 +20,13 @@ _app:
 	//avvio il confronto tra A e B
 	CMP R0, R1
 	
-	//verifico se A è maggiore di B
+	//se A è maggiore di B
 	BGT _maggiore
 	
-	//verifico se A è minore di B
+	//se A è minore di B
 	BLT _minore
 	
-	//verifico se A è uguale a B
+	//se A è uguale a B
 	BEQ _uguale
 	
 _maggiore:
