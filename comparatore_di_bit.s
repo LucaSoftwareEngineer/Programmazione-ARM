@@ -1,7 +1,5 @@
 .global _start
-
 _start:
-
 	//resetto i registri prima di avviare il programma
 	B _reset_registri
 	
@@ -13,7 +11,6 @@ _reset_registri:
 	B _app
 	
 _app:
-	
 	//assegno al registro 0 il valore di A
 	MOV R0,#0
 	
