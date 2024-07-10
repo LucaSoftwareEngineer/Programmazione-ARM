@@ -1,6 +1,6 @@
-//Scrivere un programma in linguaggio assemblativo 8088 che,
+//Scrivere un programma in linguaggio assembly ARM che,
 //presi due dati a e b in memoria, calcola l’espressione (a+3)*b
-//ponendo il risultato nel registro accumulatore.
+//ponendo il risultato in un registro.
 
 .global _start
 _start:
