@@ -17,4 +17,4 @@ _exit:
 	MOV R0, #0
 	MOV R1, #0
 	MOV R7, #1
-  SWI 0
+  	SWI 0
