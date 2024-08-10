@@ -29,7 +29,7 @@ start:
 	BNE fine
 	
 trovato:
-	MOV R2, #1
+	MOV R2, #1 @se ho trovato l'elemento nel array R2 diventa vero
 	B fine
 
 fine:
