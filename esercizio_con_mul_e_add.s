@@ -4,16 +4,13 @@
 
 .global _start
 _start:
-	mov r0, #0x01 //questo è A
-	mov r1, #0x04 //questo è B
-	mov r2, #0x03 //questo è 3
-	B _espressione
+	MOV R0, #2 @a
+	MOV R1, #5 @b
+	ADD R0, #3 @a+3
+	MUL R2, R0, R1 @(a+3)*b
+	B _fine
 	
-_espressione:
-	mov r3, r0
-	add r3, r2
-	mul r3, r1
-	B _fine
-
 _fine:
-	B _fine
+	MOV R7, #1
+	MOV R0, #0
+	SVC 0
