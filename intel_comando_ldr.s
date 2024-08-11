@@ -4,7 +4,7 @@
 .global _start
 _start:
   LDR R0, =V @puntatore al array V
-  LDR R1, [R0], #4 @primo elemento del array
+  LDR R1, [R0], #4 @primo elemento del array        nota: ogni 4 byte c'è un elemento
   LDR R2, [R0], #4 @secondo elemento del array
   LDR R3, [R0], #4 @terzo elemento del array
   B _fine
