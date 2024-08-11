@@ -20,4 +20,6 @@ _reset_registri:
 	B _app
 	
 _fine:
-	B _fine
+	MOV R7, #1
+ 	MOV R1, #0
+  	SVC 0
