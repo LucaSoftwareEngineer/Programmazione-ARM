@@ -38,28 +38,28 @@ _start:
 	@computer numero 2
 	LDR R0, =codice
 	MOV R1, #2
-	STR R1, [R0, #4]
+	STR R1, [R0, #8]
 	LDR R0, =marca
 	MOV R1, #0X10
-	STR R1, [R0, #4]
+	STR R1, [R0, #8]
 	LDR R0, =modello
 	MOV R1, #0X10
-	STR R1, [R0, #4]
+	STR R1, [R0, #8]
 	LDR R0, =velocita_processore
 	MOV R1, #4
-	STR R1, [R0, #4]
+	STR R1, [R0, #8]
 	LDR R0, =dimensioni_ram
 	MOV R1, #8
-	STR R1, [R0, #4]
+	STR R1, [R0, #8]
 	LDR R0, =dimensioni_disco
 	MOV R1, #0x20
-	STR R1, [R0, #4]
+	STR R1, [R0, #8]
 	LDR R0, =dimensioni_monitor
 	MOV R1, #0X50
-	STR R1, [R0, #4]
+	STR R1, [R0, #8]
 	LDR R0, =anno_acquisto
 	MOV R1, #0X24
-	STR R1, [R0, #4]
+	STR R1, [R0, #8]
 	
 	B _end
 _end:
