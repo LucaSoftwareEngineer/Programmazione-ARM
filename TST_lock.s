@@ -1,5 +1,5 @@
 .section .data
-  lock: .word 1
+  lock: .word 0
 
 .global _start
 _start:
@@ -13,7 +13,18 @@ wait_lock:
   BNE wait_lock          @se risultato TST 1
 
 regione_critica:
+  @BEGIN IMPOSTO LOCK A 1
+  MOV R5, #1
+  STR R5, [R0]
+  @END IMPOSTO LOCK A 1
+  
   MOV R2, #3
+  
+  @BEGIN IMPOSTO LOCK A 0
+  MOV R6, #0
+  STR R6, [R0]
+  @END IMPOSTO LOCK A 0
+  
   B fine
   
 fine:
